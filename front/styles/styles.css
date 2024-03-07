@@ -11,7 +11,7 @@ nav {
     display: flex;
     justify-content: end;
     align-items: center;
-    height: 50px;
+    height: 70px;
     padding-right: 40px;
     margin-top: 40px;
     border-bottom: solid rgb(0, 0, 0) 5px;
@@ -21,11 +21,16 @@ nav {
 }
 
 nav button {
-    margin: 7px;
+    margin: 27px;
     padding: 5px;
     color: rgb(237, 238, 221);
     background-color: black;
     
+}
+
+input{
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
 }
 
 .img-container {
@@ -41,7 +46,7 @@ nav button {
     
 }
 
-.img-display {
+.card-body{
     width: 200px;
     border-radius: 5px;
     text-align: center;
@@ -51,13 +56,13 @@ nav button {
     
 }
 
-.img-display img {
+.card-body img {
     width: 100%;
-    height: auto;
+    
     
 }
 
-.img-display:hover {
+.card-body:hover {
     transform: translateY(-20px) ;
     transition: transform 1s ease;
     box-shadow: 5px 5px 40px rgb(149, 98, 149);
@@ -65,7 +70,7 @@ nav button {
 
 .movie-data{
     display:flex;
-    
+    margin: 30px;
     flex-direction: column;
     color: white;
     transition: 2s ease;

@@ -15,10 +15,11 @@ function createImgDisplay(data) {
 
 
     const imgDisplay = document.createElement("div"); // creamos el elemento div que almacenara las peliculas
-    imgDisplay.classList.add("img-display"); // asignamos la clase al nuevo div
+    imgDisplay.classList.add("card-body"); // asignamos la clase al nuevo div
 
     imgDisplay.innerHTML = `
-        <img src="${item.poster}" alt="${item.title}">
+        <img  class="card-img-top" src="${item.poster}" alt="${item.title}">
+        
       `;
 
 
