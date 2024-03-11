@@ -37,7 +37,7 @@ input{
     background-color: rgb(255, 255, 255);
 }
 
-.img-container {
+#cardContainer {
     display: flex;
     padding: 25px;
     justify-content: center;
@@ -74,17 +74,7 @@ input{
     box-shadow: 5px 5px 40px rgb(166, 95, 166);
 }
 
-.movie-data{
-    display:flex;
-    margin: 30px;
-    flex-direction: column;
-    color: white;
-    transition: 2s ease;
-}
 
-.img-display:hover .movie-data{
-    opacity: 1;
-}
 @keyframes fadeIn {
     from {
         opacity: 0;
