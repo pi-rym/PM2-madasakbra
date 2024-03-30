@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(38, 36, 41);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  h1 {
+    color: rgb(229, 0, 0);
+  }
+  #movieForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 7px 7px 30px white;
+    border-radius: 9px;
+  }
+  label,
+  input,
+  button {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  button {
+    padding: 10px;
+    background-color: rgb(229, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  details {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  summary {
+    cursor: pointer;
+  }
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Distribuir elementos uniformemente */
+  }
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    flex: 0 4 30%;
+    margin-bottom: 5px;
+  }
+  /* Cambiar cursor a forma de mano al pasar sobre el input de genre */
+  #genre {
+    cursor: pointer;
+  }
+
+  .fade-in {
+    animation: fadeInAnimation 1s ease-in forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

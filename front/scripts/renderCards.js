@@ -8,7 +8,7 @@ const renderCards = (data) => {
     card.classList.add("card-body"); // asignamos la clase al nuevo div
 
     card.innerHTML = `
-<a href="./preview.html"> <img  class="card-img-top" src="${item.poster}" alt="${item.title}" "></a>
+ <img  class="card-img-top" src="${item.poster}" alt="${item.title}" ">
        
         
       `;
