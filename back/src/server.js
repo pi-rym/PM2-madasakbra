@@ -1,16 +1,29 @@
-const express = require("express"); // importamos la bibblioteca
+// Importamos la biblioteca Express
+const express = require("express");
 
-const router = require("./routes/index"); // Solicitamos
+// Importamos el enrutador desde el archivo "./routes/index"
+const router = require("./routes/index");
 
-const morgan = require("morgan"); //solicitamos morgan
+// Importamos la biblioteca Morgan para hacer logs de las peticiones HTTP
+const morgan = require("morgan");
 
+// Importamos la biblioteca CORS para habilitar el intercambio de recursos entre diferentes dominios
 const cors = require("cors");
 
-const app = express(); // creamos la funcion de express
+// Creamos una instancia de la aplicación Express
+const app = express();
 
+// Usamos Morgan para registrar los logs de las peticiones HTTP en el formato "dev"
 app.use(morgan("dev"));
-app.use(express.json())
-app.use(cors());
-app.use(router); // montamos el enrutados en la aplicacion principal de Express
 
+// Habilitamos el manejo de datos JSON en las peticiones
+app.use(express.json());
+
+// Habilitamos el middleware CORS para permitir solicitudes desde diferentes orígenes
+app.use(cors());
+
+// Montamos el enrutador en la aplicación principal de Express
+app.use(router);
+
+// Exportamos la aplicación Express para que pueda ser utilizada en otros archivos
 module.exports = app;
