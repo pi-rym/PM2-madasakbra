@@ -21,4 +21,30 @@ function clearInput() {
     genres.forEach(genre => {
         genre.checked = false;
     });
+
 }
+
+
+function send() {
+    const selectedGenres = genres.filter(genre => genre.checked).map(genre => genre.value);
+    console.log("Géneros seleccionados:", selectedGenres);
+  
+    axios
+      .post("http://localhost:3000/movies", {
+        title: title.value,
+        year: year.value,
+        director: director.value,
+        duration: duration.value,
+        genre: selectedGenres,
+        rate: rate.value,
+        poster: poster.value,
+      })
+      .then(() => {
+        alert("Películas creadas correctamente");
+        clearInput(); // Limpiar los campos después de enviar el formulario
+      })
+      .catch((error) => {
+        throw new Error(error.message);
+      });
+  }
+  

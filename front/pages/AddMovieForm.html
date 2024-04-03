@@ -13,7 +13,7 @@
       <label for="title">Title:</label>
       <input type="text" id="title" name="title" />
       <label for="year">Year:</label>
-      <input type="text" id="year" name="year" />
+      <input type="number" id="year" name="year" />
       <label for="director">Director:</label>
       <input type="text" id="director" name="director" />
       <label for="duration">Duration:</label>
@@ -48,14 +48,14 @@
           >
         </div>
       </details>
-      <label id="rate">Rate:</label>
+      <label  for="rate">Rate:</label>
 
-      <input type="number" id="rate" name="rate" step="0.1" min="0" max="10" />
+      <input type="number" id="rate"  step="0.1" min="0" max="10" />
 
-      <label id="poster">Poster:</label>
-      <input type="text" id="poster" name="poster" />
+      <label for="poster">Poster:</label>
+      <input type="text" id="poster" />
 
-      <button type="button" onclick="upLoadMovie()">
+      <button type="button" onclick="send()">
         Save Movie
       </button>
 

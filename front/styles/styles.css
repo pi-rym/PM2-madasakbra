@@ -69,10 +69,15 @@ input{
     
 }
 
+p{
+    color: yellow;
+    font-size: medium;
+}
+
 .card-body:hover {
     transform: translateY(-20px) ;
     transition: transform 1s ease;
-    box-shadow: 5px 5px 40px rgb(166, 95, 166);
+    box-shadow: 5px 5px 40px rgb(255, 237, 171);
 }
 
 
