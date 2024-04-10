@@ -1,12 +1,17 @@
 body {
-    background-color: rgb(38, 36, 41);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
+  background-color: rgb(38, 36, 41);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  
+  background-size: cover; /* La imagen cubrirá todo el contenedor */
+  background-position: center; /* La imagen estará centrada */
+  background-repeat: no-repeat; /* La imagen no se repetirá */
+}
+
   h1 {
     color: rgb(229, 0, 0);
   }
@@ -14,12 +19,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: aliceblue;
+    color: rgb(246, 246, 246);
     width: 80%;
     max-width: 400px;
     padding: 20px;
-    box-shadow: 7px 7px 30px white;
+    box-shadow: 7px 7px 90px rgb(119, 169, 235);
     border-radius: 9px;
+    background-color: black 30%;
+    
+    
   }
   label,
   input,

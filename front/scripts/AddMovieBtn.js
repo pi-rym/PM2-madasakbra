@@ -28,7 +28,8 @@ function clearInput() {
 function send() {
     const selectedGenres = genres.filter(genre => genre.checked).map(genre => genre.value);
     console.log("Géneros seleccionados:", selectedGenres);
-  
+   
+   
     axios
       .post("http://localhost:3000/movies", {
         title: title.value,
@@ -44,7 +45,7 @@ function send() {
         clearInput(); // Limpiar los campos después de enviar el formulario
       })
       .catch((error) => {
-        throw new Error(error.message);
+        throw new Error(alert ("Missing data, please complete the form"));
       });
   }
   
