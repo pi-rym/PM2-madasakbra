@@ -1,7 +1,7 @@
 class Movies {
   constructor({title, year, director, duration, genre, rate, poster}) {
     if (!title || !year || !poster) {
-      throw new Error("Datos faltantes");
+      throw new Error("Missing data");
     }
     this.title = title;
     this.year = year;
