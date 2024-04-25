@@ -1,4 +1,4 @@
-
+ 
 // Espera a que se cargue completamente el contenido HTML antes de ejecutar el código
 document.addEventListener("DOMContentLoaded", () => {
     // Obtiene referencias a los elementos del formulario por su ID
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch((error) => {
             // En caso de error, muestra un mensaje indicando que faltan datos en el formulario
-            throw new Error(alert("Database connection refused"));
+            throw new Error(alert("All spaces required"));
         });
     }
     }

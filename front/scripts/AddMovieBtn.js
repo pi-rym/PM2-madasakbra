@@ -45,7 +45,7 @@ function send() {
         clearInput(); // Limpiar los campos después de enviar el formulario
       })
       .catch((error) => {
-        throw new Error(alert ("Database connection refused"));
+        throw new Error(alert ("All spaces are required"));
       });
   }
   
